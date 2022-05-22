@@ -113,6 +113,14 @@ h2 {
 .fonction li:hover {
   background: #f2e7ff;
 }
+.fonction li .chiffre {
+  position: relative;
+  color: white;
+  background-color: #9356DC;
+  border: #9356DC;
+  border-radius: 15px;
+  right: 155px;
+}
 
 #resto {
   display: flex;

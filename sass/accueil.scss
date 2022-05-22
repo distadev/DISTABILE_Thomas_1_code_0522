@@ -134,6 +134,16 @@ $fourth:#F2F2F2;
             {
                 background:#f2e7ff;
             }
+
+        .chiffre
+        {
+            position: relative;
+            color: white;
+            background-color:$primary;
+            border: $primary;
+            border-radius: 15px;
+            right: 155px;
+        } 
         }
     } 
 
