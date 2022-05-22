@@ -186,6 +186,15 @@ $fourth:#F2F2F2;
             color: black;
             font-size: 12px;
         }
+        p
+        {
+            position: absolute;
+            bottom: 100px;
+            right: 8px;
+            background-color: $third;
+            color: green;
+            padding: 10px;
+        }
     }
 
     footer
