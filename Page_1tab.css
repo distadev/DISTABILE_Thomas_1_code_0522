@@ -1,0 +1,34 @@
+@media only screen and (max-width: 768px)
+{
+    #bloc_page
+    {
+        width: 100%;
+        margin: auto;
+    }  
+
+    #logo
+    {
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .sous_menu
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block-start: 2em;
+
+    }
+
+    footer
+    {
+        display: flex;
+    }
+        h6
+        {
+         margin-left: 6%;
+        }
+}

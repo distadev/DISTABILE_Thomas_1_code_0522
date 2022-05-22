@@ -1,0 +1,313 @@
+body {
+  font-family: "Shrikhand", "Roboto", sans-serif;
+}
+
+#bloc_page {
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  margin: auto;
+}
+
+#logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+#logo i {
+  color: black;
+  padding-left: 10px;
+  font-size: 30px;
+  padding-right: 300px;
+}
+
+.Photo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.coeur {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coeur a {
+  color: black;
+}
+.coeur i {
+  font-size: xx-large;
+}
+.coeur i:hover {
+  font-weight: bold;
+  background-color: linear-gradient(rgb(147, 86, 220) 35%, rgb(255, 121, 217) 100%);
+  transform: transition;
+  transition-duration: 700ms;
+}
+
+#bloc_menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  margin-top: -200px;
+  background-color: #F2F2F2;
+}
+#bloc_menu h1 {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Shrikhand";
+  margin-left: 10px;
+}
+#bloc_menu h2 {
+  font-family: "Roboto";
+  font-weight: normal;
+  border-bottom: 2px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 5%;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+#bloc_menu .entrees, #bloc_menu .plat, #bloc_menu .dessert {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px #c2c2c2;
+  background-color: white;
+  border-radius: 10px;
+  width: 97%;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#bloc_menu .entrees:hover, #bloc_menu .plat:hover, #bloc_menu .dessert:hover {
+  width: 93%;
+  transition-duration: 300ms;
+  transform: translateX(7px);
+}
+#bloc_menu .entrees h4, #bloc_menu .entrees h5, #bloc_menu .entrees h6, #bloc_menu .plat h4, #bloc_menu .plat h5, #bloc_menu .plat h6, #bloc_menu .dessert h4, #bloc_menu .dessert h5, #bloc_menu .dessert h6 {
+  font-family: "Roboto";
+}
+#bloc_menu .entrees h4, #bloc_menu .plat h4, #bloc_menu .dessert h4 {
+  margin-block-start: 10px;
+  margin-block-end: 2px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#bloc_menu .entrees h5, #bloc_menu .plat h5, #bloc_menu .dessert h5 {
+  margin-block-start: 0;
+  margin-block-end: 2px;
+  font-weight: normal;
+  font-size: 14px;
+}
+#bloc_menu .entrees h6, #bloc_menu .plat h6, #bloc_menu .dessert h6 {
+  margin-block-start: 0;
+  justify-content: flex-end;
+  margin-block-end: 16px;
+  font-size: 15px;
+}
+#bloc_menu .entrees .prix, #bloc_menu .plat .prix, #bloc_menu .dessert .prix {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8px;
+}
+#bloc_menu .entrees .prix i, #bloc_menu .plat .prix i, #bloc_menu .dessert .prix i {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 30px;
+  background-color: #99E2D0;
+  padding: 10px;
+  height: 69px;
+}
+#bloc_menu .entrees .check, #bloc_menu .plat .check, #bloc_menu .dessert .check {
+  display: flex;
+  flex-direction: row;
+}
+
+.order {
+  display: flex;
+  margin-block-start: 1em;
+  justify-content: center;
+}
+
+.commander {
+  font-family: "Roboto";
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #ff79d9, #9356DC);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 5px 5px #c2c2c2;
+  margin-block-end: 3em;
+  text-decoration: none;
+  transform: scale(1);
+  transition-property: transform;
+}
+.commander:hover {
+  background: linear-gradient(to right, #ff79ed, #aa65ff);
+  transform: scale(1.3);
+  transition-duration: 400ms;
+  box-shadow: 3px 7px 7px #c2c2c2;
+}
+
+footer {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  background: #404040;
+  width: 100%;
+  color: white;
+}
+footer i {
+  padding-right: 5px;
+}
+footer h6 {
+  font-size: 18px;
+  margin-block-end: 0;
+  margin-block-start: 1em;
+  margin-left: 27px;
+}
+footer ul {
+  list-style-type: none;
+  margin-left: -10px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+footer .fa-utensils {
+  font-size: 15px;
+  padding-right: 15px;
+}
+footer .fa-hands-helping {
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #bloc_page {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 46%;
+  }
+  #logo i {
+    padding: 0;
+  }
+  #logo img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Photo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+  }
+
+  #bloc_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    margin-top: -200px;
+    background-color: #F2F2F2;
+  }
+  #bloc_menu h1 {
+    font-weight: bold;
+    font-size: 36px;
+    font-family: "Shrikhand";
+    margin-left: 15px;
+  }
+  #bloc_menu h2 {
+    font-family: "Roboto";
+    font-weight: normal;
+    border-bottom: 2px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 5%;
+    text-transform: uppercase;
+    margin-left: 15px;
+  }
+  #bloc_menu .entrees, #bloc_menu .plat, #bloc_menu .dessert {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px #c2c2c2;
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  #bloc_menu .entrees:hover, #bloc_menu .plat:hover, #bloc_menu .dessert:hover {
+    width: 93%;
+    transition-duration: 300ms;
+    transform: translateX(7px);
+  }
+  #bloc_menu .entrees h4, #bloc_menu .entrees h5, #bloc_menu .entrees h6, #bloc_menu .plat h4, #bloc_menu .plat h5, #bloc_menu .plat h6, #bloc_menu .dessert h4, #bloc_menu .dessert h5, #bloc_menu .dessert h6 {
+    font-family: "Roboto";
+  }
+  #bloc_menu .entrees h4, #bloc_menu .plat h4, #bloc_menu .dessert h4 {
+    margin-block-start: 10px;
+    margin-block-end: 2px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #bloc_menu .entrees h5, #bloc_menu .plat h5, #bloc_menu .dessert h5 {
+    margin-block-start: 0;
+    margin-block-end: 2px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  #bloc_menu .entrees h6, #bloc_menu .plat h6, #bloc_menu .dessert h6 {
+    margin-block-start: 0;
+    justify-content: flex-end;
+    margin-block-end: 16px;
+    font-size: 15px;
+  }
+  #bloc_menu .entrees .prix, #bloc_menu .plat .prix, #bloc_menu .dessert .prix {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8px;
+  }
+  #bloc_menu .entrees .prix i, #bloc_menu .plat .prix i, #bloc_menu .dessert .prix i {
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    background-color: #99E2D0;
+    padding: 10px;
+    height: 69px;
+  }
+  #bloc_menu .entrees .check, #bloc_menu .plat .check, #bloc_menu .dessert .check {
+    display: flex;
+    color: #99E2D0;
+  }
+}
+
+/*# sourceMappingURL=restaurants.css.map */
