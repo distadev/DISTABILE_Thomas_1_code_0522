@@ -119,8 +119,10 @@ $fourth:#F2F2F2;
             margin-left: 3%;
             margin-block-end: 0;
         }
+
         li
         {
+            list-style-type: none;
             background: $fourth;
             border-radius: 10px;
             padding: 25px;
@@ -129,11 +131,11 @@ $fourth:#F2F2F2;
             align-items: center;
             margin-block-start: 10px;
         &:hover
-            {background:grey;
+            {
+                background:#f2e7ff;
             }
         }
     } 
-
 
     #resto
     {
@@ -141,9 +143,10 @@ $fourth:#F2F2F2;
         flex-direction: column;
         width: 100%;
         background: $fourth;
+
         a
         {
-            width: 94%;
+            width: 40%;
             margin: 3%;
             height: 300px;
             border-radius: 10px;
@@ -174,6 +177,7 @@ $fourth:#F2F2F2;
             font-size: 12px;
         }
     }
+
     footer
 {
     font-family: 'Roboto';
