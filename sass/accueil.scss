@@ -43,13 +43,27 @@ $fourth:#F2F2F2;
 
     .explorer
     {
-        background: linear-gradient(to right, $secondary,rgba(158, 67, 211));
         color: white;
         border-radius: 20px;
         padding: 10px;
         border: $secondary;
         box-shadow: 1px 5px 5px #c2c2c2;
         margin-block-end: 3em;
+        font-family: 'Roboto';
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to right, $secondary,$primary);
+        text-decoration: none;
+        transform: scale(1);
+        transition-property: transform;
+            &:hover
+            {
+                background: linear-gradient(to right, #ff79ed, #aa65ff);
+                transform: scale(1.3);
+                transition-duration: 400ms;
+                box-shadow: 3px 7px 7px #c2c2c2;
+            }
     }
 
     section
@@ -161,32 +175,43 @@ $fourth:#F2F2F2;
         }
     }
     footer
+{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    background: #404040;
+    width: 100%;
+    color: white;
+    i
     {
-        display: flex;
-        flex-direction: column;
-        background: #404040;
-        width: 100%;
-        color: white;
-        h6
-        {
-            font-size: 18px;
-            margin-block-end: 0;
-            margin-block-start: 1em;
-            margin-left: 27px;
-        }
-        ul
-        {
-            list-style-type: none;
-            margin-left: -10px;
-        }
-        a
-        {
-            text-decoration: none;
-            color: white;
-        }
-        .fa
-        {
-            font-size: 16px;
-        }
+        padding-right: 5px;
     }
-        
+    h6
+    {
+        font-size: 18px;
+        margin-block-end: 0;
+        margin-block-start: 1em;
+        margin-left: 27px;
+    }
+    ul
+    {
+        list-style-type: none;
+        margin-left: -10px;
+    }
+    a
+    {
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+    }
+    .fa-utensils
+    {
+        font-size: 15px;
+        padding-right: 15px;
+    }
+    .fa-hands-helping
+    {   
+        font-size: 13px;
+        padding-right: 10px;
+    }
+}
