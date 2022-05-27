@@ -19,16 +19,25 @@ body {
 }
 
 .lieu {
-  width: 100%;
   display: flex;
+  width: 100%;
   background-color: #F2F2F2;
   justify-content: center;
 }
-
-h1, h2 {
-  width: 100%;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.lieu .fa-location-dot {
+  align-items: center;
+  font-size: 22px;
+  padding-top: 7px;
+}
+.lieu #ville {
+  border: none;
+  background-color: #F2F2F2;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .explorer {
@@ -38,8 +47,8 @@ h1, h2 {
   border: #FF79DA;
   box-shadow: 1px 5px 5px #c2c2c2;
   margin-block-end: 3em;
-  font-family: "Roboto";
-  width: 50%;
+  font-size: 22px;
+  width: 35%;
   display: flex;
   justify-content: center;
   background: linear-gradient(to right, #FF79DA, #9356DC);
@@ -70,56 +79,50 @@ section {
   align-items: center;
   background: linear-gradient(white, rgba(219, 219, 219, 0.568627451));
 }
-
-h1, h2 {
-  display: flex;
+.sous_menu h1, .sous_menu h2 {
+  width: 100%;
   justify-content: center;
-}
-
-h2 {
-  font-weight: normal;
+  margin-block-start: 0;
   margin-block-end: 1em;
+  display: flex;
+}
+.sous_menu h2 {
+  font-weight: normal;
 }
 
 .fonction {
   width: 98%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.fonction ol {
+.fonction ul {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-block-start: 0;
-  border-radius: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline-start: 20px;
 }
 .fonction h3 {
-  margin-left: 3%;
+  margin-left: 15px;
   margin-block-end: 0;
 }
 .fonction li {
-  list-style-type: none;
+  display: flex;
+  width: 28%;
   background: #F2F2F2;
   border-radius: 10px;
-  padding: 25px;
-  padding-left: 10%;
-  padding-right: 10%;
+  height: 80px;
   align-items: center;
   margin-block-start: 10px;
+  justify-content: center;
 }
 .fonction li:hover {
   background: #f2e7ff;
 }
 .fonction li .chiffre {
-  position: relative;
   color: white;
   background-color: #9356DC;
   border: #9356DC;
   border-radius: 15px;
-  right: 155px;
 }
 
 #resto {
@@ -129,23 +132,25 @@ h2 {
   background: #F2F2F2;
 }
 #resto a {
-  width: 40%;
-  margin: 3%;
+  margin: 15px;
   height: 300px;
   border-radius: 10px;
-  background: white;
   text-decoration: none;
+  background-color: white;
   color: black;
 }
 #resto img {
-  width: 100%;
+  width: 98%;
   object-fit: cover;
   height: 200px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-#resto h3, #resto h4, #resto h5 {
-  margin-left: 3%;
+#resto h3, #resto p {
+  margin-left: 20px;
+}
+#resto p {
+  margin-block-start: 0;
 }
 #resto h5 {
   font-weight: normal;
@@ -154,13 +159,39 @@ h2 {
   color: black;
   font-size: 12px;
 }
-#resto p {
-  position: absolute;
-  bottom: 100px;
-  right: 8px;
-  background-color: #99E2D0;
-  color: green;
-  padding: 10px;
+
+.carteresto {
+  padding-bottom: 15px;
+}
+
+.text {
+  width: 98%;
+  background-color: white;
+  margin-left: 15px;
+  border-radius: 0px 0px 15px 15px;
+  height: 100px;
+}
+.text p {
+  font-size: 20px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.text .coeur {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.text .fa-heart {
+  font-size: 20px;
+  color: #9356DC;
+  font-size: xx-large;
+  transform: transition;
+}
+.text .fa-heart:hover {
+  color: linear-gradient(rgb(147, 86, 220) 35%, rgb(255, 121, 217) 100%);
+  transition-duration: 700ms;
 }
 
 footer {

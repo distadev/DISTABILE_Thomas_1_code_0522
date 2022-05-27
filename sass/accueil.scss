@@ -2,9 +2,10 @@ $primary:#9356DC;
 $secondary:#FF79DA;
 $third:#99E2D0;
 $fourth:#F2F2F2;
+
     body
     {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     #bloc_page
@@ -25,20 +26,29 @@ $fourth:#F2F2F2;
         box-shadow: 0px 2px 0px grey;
     
     }
-    
     .lieu
     {
-        width: 100%;
         display: flex;
+        width: 100%;
         background-color: $fourth;
         justify-content: center;
-    }
-
-    h1,h2
-    {
-        width: 100%;
-        margin-block-start: 0;
-        margin-block-end: 0;
+        .fa-location-dot
+        {   
+            align-items: center;
+            font-size: 22px;
+            padding-top: 7px;
+        }
+        #ville
+        {
+            border: none;
+            background-color: $fourth;
+            margin-left: 10px;
+            padding-left: 10px;
+            font-size: 18px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     .explorer
@@ -49,8 +59,8 @@ $fourth:#F2F2F2;
         border: $secondary;
         box-shadow: 1px 5px 5px #c2c2c2;
         margin-block-end: 3em;
-        font-family: 'Roboto';
-        width: 50%;
+        font-size: 22px;
+        width: 35%;
         display: flex;
         justify-content: center;
         background: linear-gradient(to right, $secondary,$primary);
@@ -82,54 +92,52 @@ $fourth:#F2F2F2;
         justify-content: center;
         align-items: center;
         background: linear-gradient(white, #dbdbdb91);
-    }
-
 
         h1,h2
         {
-            display: flex;
+            width: 100%;
             justify-content: center;
+            margin-block-start: 0;
+            margin-block-end: 1em;
+            display: flex;
         }
+
         h2
         {
             font-weight: normal;
-            margin-block-end: 1em;
-        }   
-    
+        }
+    }
+
     .fonction
     {
         width: 98%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
-        ol
+        ul
         {
             display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-block-start: 0;
-            border-radius: 10px;
-            }
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline-start :20px;
+        }
 
         h3
         {
-            margin-left: 3%;
+            margin-left: 15px;
             margin-block-end: 0;
         }
 
         li
         {
-            list-style-type: none;
+            display: flex;
+            width: 28%;
             background: $fourth;
             border-radius: 10px;
-            padding: 25px;
-            padding-left: 10%;
-            padding-right: 10%;
+            height: 80px;
             align-items: center;
             margin-block-start: 10px;
+            justify-content: center;
+
         &:hover
             {
                 background:#f2e7ff;
@@ -137,12 +145,10 @@ $fourth:#F2F2F2;
 
         .chiffre
         {
-            position: relative;
             color: white;
             background-color:$primary;
             border: $primary;
             border-radius: 15px;
-            right: 155px;
         } 
         }
     } 
@@ -156,26 +162,30 @@ $fourth:#F2F2F2;
 
         a
         {
-            width: 40%;
-            margin: 3%;
+            margin: 15px;
             height: 300px;
             border-radius: 10px;
-            background: white;
             text-decoration: none;
+            background-color: white;
             color: black;
         }
 
         img
         {
-        width: 100%;
+        width: 98%;
         object-fit: cover;
         height: 200px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         }
-        h3,h4,h5
+        h3,p
         {
-            margin-left: 3%;
+            margin-left: 20px;
+        }
+        p
+        {
+            margin-block-start: 0;
+
         }
         h5
         {
@@ -186,16 +196,49 @@ $fourth:#F2F2F2;
             color: black;
             font-size: 12px;
         }
-        p
-        {
-            position: absolute;
-            bottom: 100px;
-            right: 8px;
-            background-color: $third;
-            color: green;
-            padding: 10px;
-        }
     }
+.carteresto
+{
+    padding-bottom: 15px;
+}
+
+
+
+.text
+{
+    width: 98%;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 0px 0px 15px 15px;
+    height: 100px;
+    p
+    {
+        font-size: 20px;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    .coeur
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 15px;
+        font-size: 18px
+    }
+    .fa-heart
+    {
+        font-size: 20px;
+        color: $primary;
+        font-size: xx-large;
+        transform: transition;
+        &:hover
+        {
+            color: linear-gradient(rgba(147,86,220,1) 35%, rgba(255,121,217,1) 100%);
+            transition-duration: 700ms;
+        }
+    }   
+
+}
 
     footer
 {
