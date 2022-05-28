@@ -60,13 +60,12 @@ $fourth:#F2F2F2;
         box-shadow: 1px 5px 5px #c2c2c2;
         margin-block-end: 3em;
         font-size: 22px;
-        width: 35%;
+        width: 50%;
         display: flex;
         justify-content: center;
         background: linear-gradient(to right, $secondary,$primary);
         text-decoration: none;
-        transform: scale(1);
-        transition-property: transform;
+         
             &:hover
             {
                 background: linear-gradient(to right, #ff79ed, #aa65ff);
@@ -88,23 +87,34 @@ $fourth:#F2F2F2;
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-block-start: 2em;
-        justify-content: center;
+        margin-block-start: 2em;;
         align-items: center;
         background: linear-gradient(white, #dbdbdb91);
 
         h1,h2
         {
             width: 100%;
-            justify-content: center;
             margin-block-start: 0;
-            margin-block-end: 1em;
+            margin-block-end: 0.3em;
+        }
+        h1
+        {
+            justify-content: center;
             display: flex;
         }
 
         h2
         {
+            display: flex;
             font-weight: normal;
+            justify-content: center;
+        }
+        h3
+        {
+            margin-block-start: -1em;
+            font-weight: 100;
+            font-size: 24px;
+            margin-block-end: 1em;
         }
     }
 
@@ -113,6 +123,12 @@ $fourth:#F2F2F2;
         width: 98%;
         display: flex;
         flex-direction: column;
+
+        h3
+        {
+            margin-left: 15px;
+            margin-block-end: 0;
+        }
         ul
         {
             display: flex;
@@ -120,13 +136,18 @@ $fourth:#F2F2F2;
             justify-content: space-between;
             padding-inline-start :20px;
         }
-
-        h3
+        .intern
         {
-            margin-left: 15px;
-            margin-block-end: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
         }
-
+        .sep
+        {
+            margin-left: 13px;
+        
+        
+        }
         li
         {
             display: flex;
@@ -134,26 +155,43 @@ $fourth:#F2F2F2;
             background: $fourth;
             border-radius: 10px;
             height: 80px;
-            align-items: center;
             margin-block-start: 10px;
             justify-content: center;
+            box-shadow: 1px 5px 5px #c2c2c2;
 
         &:hover
             {
                 background:#f2e7ff;
             }
+        }
+}
 
-        .chiffre
-        {
+.chiffre1,.chiffre2,.chiffre3
+        { 
             color: white;
             background-color:$primary;
             border: $primary;
             border-radius: 15px;
+            height: 22px;
+            width: 22px;
+            position: absolute;
+            top: 474px;
         } 
-        }
-    } 
 
-    #resto
+.chiffre1
+{
+    left: 18px;
+}    
+.chiffre2
+{
+    left: 35.6%;
+}
+.chiffre3
+{
+    left: 70%;
+}
+
+ #resto
     {
         display: flex;
         flex-direction: column;
@@ -172,7 +210,7 @@ $fourth:#F2F2F2;
 
         img
         {
-        width: 98%;
+        width: 97%;
         object-fit: cover;
         height: 200px;
         border-top-right-radius: 10px;
@@ -185,6 +223,8 @@ $fourth:#F2F2F2;
         p
         {
             margin-block-start: 0;
+            margin-block-end: 0.5em;
+
 
         }
         h5
@@ -202,11 +242,29 @@ $fourth:#F2F2F2;
     padding-bottom: 15px;
 }
 
+.newpal
+{
+    position: absolute;
+    background-color:#7dcf99;
+    color: green;
+    padding: 10px;
+    top: 630px;
+    right: 6%;
+}
 
+.newnote
+{
+    position: absolute;
+    background-color:#7dcf99;
+    color: green;
+    padding: 10px;
+    top: 965px;
+    right: 6%;
+}
 
 .text
 {
-    width: 98%;
+    width: 97%;
     background-color: white;
     margin-left: 15px;
     border-radius: 0px 0px 15px 15px;
@@ -242,7 +300,6 @@ $fourth:#F2F2F2;
 
     footer
 {
-    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     background: #404040;
@@ -254,6 +311,7 @@ $fourth:#F2F2F2;
     }
     h6
     {
+        font-family: "shrikhand";
         font-size: 18px;
         margin-block-end: 0;
         margin-block-start: 1em;
@@ -272,12 +330,161 @@ $fourth:#F2F2F2;
     }
     .fa-utensils
     {
-        font-size: 15px;
         padding-right: 15px;
     }
-    .fa-hands-helping
+    .fa-handshake-angle
     {   
-        font-size: 13px;
-        padding-right: 10px;
+        padding-right: 9px;
     }
+}
+
+@media only screen and (max-width: 768px)
+{
+    header
+    {
+        width: 100%;
+    }
+    .explorer
+    {
+        margin-block-end: 1.5em;
+        width: 70%;
+    }
+    .sous_menu 
+    {
+        h2
+        {
+            margin-block-end: 0;
+        }
+    }
+    .fonction
+    {
+        ul
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        li
+        {
+            width: 60%;
+        }
+        .chiffre1,.chiffre2,.chiffre3
+        {
+            left: 21%;
+        }
+        .chiffre1
+        {
+            top: 434px;
+        }
+        .chiffre2
+        {
+            top: 524px;
+        }
+        .chiffre3
+        {
+            top: 614px;
+        }
+    }
+    #resto 
+    {
+        img
+        {
+            width: 95%;
+        }
+        .text
+        {
+            width: 95%;
+        }
+    }
+
+    .newpal
+    {
+        top: 775px;
+        right: 6%;
+    }
+
+    .newnote
+    {
+        top: 1110px;
+        right: 6%;
+    }
+}
+@media only screen and (max-width: 425px)
+{
+    #bloc_page
+    {
+        width: 100%;
+    }
+
+    #logo img
+    {
+        width: 60%;
+        display: flex;
+    }
+
+    .sous_menu
+    {
+        h1
+        {
+            font-size: 20px;
+        }
+        h2,h3
+        {
+            font-size: 18px;
+        }
+    }
+    .explorer
+    {
+        margin-block-end: 1.5em;
+        width: 70%;
+        font-size: 17px;
+    }
+    .fonction
+    {
+
+        li
+        {
+            width: 100%;
+        }
+        .chiffre1,.chiffre2,.chiffre3
+        {
+            left: 5%;
+        }
+        .chiffre1
+        {
+            top: 45%;
+        }
+        .chiffre2
+        {
+            top: 54.7%;
+        }
+        .chiffre3
+        {
+            top: 64.4%;
+        }
+    }
+        #resto
+        {
+            img
+            {
+                width: 90%;
+            }
+            .text
+            {
+                width: 90%;
+            }
+        }
+
+    .newpal
+    {
+        top: 80%;
+        right: 10%;
+    }
+
+    .newnote
+    {
+        top: 117%;
+        right: 10%;
+    }
+    
 }
