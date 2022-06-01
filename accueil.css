@@ -235,14 +235,13 @@ section {
   font-size: 18px;
 }
 .text .fa-heart {
-  font-size: 20px;
   color: #9356DC;
   font-size: xx-large;
-  transform: transition;
 }
 .text .fa-heart:hover {
+  transition: 0.35s ease-in-out;
+  transition-property: top, bottom, left, right, border-width;
   color: linear-gradient(rgb(147, 86, 220) 35%, rgb(255, 121, 217) 100%);
-  transition-duration: 700ms;
 }
 
 footer {

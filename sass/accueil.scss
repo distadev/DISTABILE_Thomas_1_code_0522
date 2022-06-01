@@ -283,16 +283,16 @@ $fourth:#F2F2F2;
         margin-right: 15px;
         font-size: 18px
     }
+    
     .fa-heart
     {
-        font-size: 20px;
         color: $primary;
         font-size: xx-large;
-        transform: transition;
         &:hover
         {
+            transition :  0.35s ease-in-out;
+            transition-property : top, bottom, left,right, border-width;
             color: linear-gradient(rgba(147,86,220,1) 35%, rgba(255,121,217,1) 100%);
-            transition-duration: 700ms;
         }
     }   
 
