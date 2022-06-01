@@ -14,12 +14,12 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
+  justify-content: space-between;
 }
 #logo i {
   color: black;
   padding-left: 10px;
   font-size: 30px;
-  padding-right: 300px;
 }
 
 .Photo {
@@ -38,6 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: transition;
 }
 .coeur a {
   color: black;
@@ -46,9 +47,8 @@ body {
   font-size: xx-large;
 }
 .coeur i:hover {
-  font-weight: bold;
+  cursor: pointer;
   background-color: linear-gradient(rgb(147, 86, 220) 35%, rgb(255, 121, 217) 100%);
-  transform: transition;
   transition-duration: 700ms;
 }
 
@@ -125,9 +125,9 @@ body {
   border-radius: 30px;
   background-color: #99E2D0;
   padding: 10px;
-  height: 69px;
 }
 #bloc_menu .entrees .check, #bloc_menu .plat .check, #bloc_menu .dessert .check {
+  visibility: hidden;
   display: flex;
   flex-direction: row;
 }
@@ -161,8 +161,8 @@ body {
 }
 
 footer {
-  font-family: "Roboto";
   display: flex;
+  font-family: "Roboto";
   flex-direction: column;
   background: #404040;
   width: 100%;
@@ -207,13 +207,14 @@ footer .fa-hands-helping {
   }
 
   #logo {
-    width: 46%;
+    width: 100%;
+    justify-content: space-between;
   }
   #logo i {
     padding: 0;
   }
   #logo img {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
   }

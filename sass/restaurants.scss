@@ -22,12 +22,12 @@ body
     display: flex;
     align-items: center;
     background-color: white;
+    justify-content: space-between;
     i
     {
         color: black;
         padding-left: 10px;
         font-size: 30px;
-        padding-right: 300px;
     }
 }
 .Photo
@@ -151,13 +151,13 @@ body
                 border-radius: 30px;
                 background-color: $third;
                 padding: 10px;
-                height: 69px;
 
             }
         }
 
         .check
         {
+            visibility: hidden;
             display: flex;
             flex-direction: row;
         }
@@ -197,6 +197,7 @@ body
 footer
 {
     display: flex;
+    font-family: "Roboto";
     flex-direction: column;
     background: #404040;
     width: 100%;
@@ -254,14 +255,15 @@ footer
 
     #logo
     {
-        width: 46%;
+        width: 100%;
+        justify-content: space-between;
         i
         {
             padding: 0;
         }
         img
         {
-            width: 100%;
+            width: 90%;
             display: flex;
             justify-content: center;
         }
