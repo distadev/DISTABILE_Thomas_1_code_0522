@@ -3,8 +3,6 @@ $secondary:#ff79d9;
 $third:#99E2D0;
 $fourth:#F2F2F2;
 
-@media only screen and (max-width: 1024px)
-{
     body
     {
         font-family: 'Shrikhand','Roboto', sans-serif;
@@ -157,10 +155,16 @@ $fourth:#F2F2F2;
         display: flex;
         font-size: 18px;
         justify-content: space-between;
-        padding-right: 10px;
+
         &:hover
         {
             width: 90%;
+        }
+        h5
+        {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;            
         }
     }
     h6
@@ -284,7 +288,6 @@ $fourth:#F2F2F2;
             padding-right: 10px;
         }
     }
-}
 
 @media only screen and (max-width:768px) 
 {
@@ -315,6 +318,36 @@ $fourth:#F2F2F2;
 }
 
 @media only screen and (max-width:425px) 
+{
+    #bloc_page
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }   
+    #logo img
+    {
+        width: 200px;
+    }
+    .titremenu
+    {
+        width: 95%;
+    }
+}
+@media only screen and (max-width :375px)
+{
+    #bloc_page
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }   
+}
+
+@media only screen and (max-width: 320px)
+    
 {
     #bloc_page
     {
