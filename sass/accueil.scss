@@ -7,7 +7,56 @@ $fourth:#F2F2F2;
     {
         font-family: "Roboto", sans-serif;
     }
+    .load
+    {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.90);
+        animation: load;
+        animation-delay: 0.5s;
+        animation-duration: 1.5s;
+        animation-fill-mode: both;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+            &__item
+            {
+                display: flex;
+                width: 30%;
+                justify-content: space-between;
+                @keyframes load {
+                    from{left: 0%;}
+                    to{left: 101%;}    
+                }
+            }
+    }
+    .rondun
+    {
     
+        height: 16px;
+        width: 16px;
+        border-radius: 20px;
+        background-color: $primary;
+        
+    }
+    .ronddeux
+    {   height: 16px;
+        width: 16px;
+        border-radius: 20px;
+        background-color: $secondary;
+    }
+    .rondtrois
+    {
+        height: 16px;
+        width: 16px;
+        border-radius: 20px;
+        background-color: $third;
+    }
+
+
     #bloc_page
     {
         display: flex;
@@ -232,9 +281,20 @@ $fourth:#F2F2F2;
             font-weight: normal;
         }
         i,.fa
+        &:hover
         {
-            color: black;
-            font-size: 12px;
+            animation-name:remplir;
+            @keyframes remplir 
+            {
+            from{color:$primary} to {color:$secondary;}
+            }
+            animation-duration: 1.3s;
+            font-weight: bold;
+            color: $secondary;
+        }
+        &:after
+        {
+        color: $secondary;
         }
     }
 .carteresto
@@ -399,13 +459,13 @@ $fourth:#F2F2F2;
 
     .newpal
     {
-        top: 775px;
+        top: 83%;
         right: 6%;
     }
 
     .newnote
     {
-        top: 1110px;
+        top: 120%;
         right: 6%;
     }
 }
@@ -452,15 +512,15 @@ $fourth:#F2F2F2;
         }
         .chiffre1
         {
-            top: 39.2%;
+            top: 40.2%;
         }
         .chiffre2
         {
-            top: 48.9%;
+            top: 49.9%;
         }
         .chiffre3
         {
-            top: 58.7%;
+            top: 59.7%;
         }
     }
         #resto
@@ -477,14 +537,39 @@ $fourth:#F2F2F2;
 
     .newpal
     {
-        top: 80%;
+        top: 75%;
         right: 10%;
     }
 
     .newnote
     {
-        top: 117%;
+        top: 113%;
         right: 10%;
     }
-    
+}
+@media only screen and (max-width: 375px)
+{
+    #bloc_page
+    {
+        width: 100%;
+    }
+    .fonction
+    {
+        .chiffre1
+        {
+            top: 39.4%;
+        }
+        .chiffre2
+        {
+            top: 49.3%;
+        }
+        .chiffre3
+        {
+            top: 58.7%;
+        }
+    }
+}
+@media only screen and (max-width: 320px)
+{
+ 
 }

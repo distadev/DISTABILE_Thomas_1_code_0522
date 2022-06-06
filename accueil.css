@@ -2,6 +2,56 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.load {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: load;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load__item {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+@keyframes load {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 101%;
+  }
+}
+
+.rondun {
+  height: 16px;
+  width: 16px;
+  border-radius: 20px;
+  background-color: #9356DC;
+}
+
+.ronddeux {
+  height: 16px;
+  width: 16px;
+  border-radius: 20px;
+  background-color: #FF79DA;
+}
+
+.rondtrois {
+  height: 16px;
+  width: 16px;
+  border-radius: 20px;
+  background-color: #99E2D0;
+}
+
 #bloc_page {
   display: flex;
   flex-direction: column;
@@ -188,9 +238,22 @@ section {
 #resto h5 {
   font-weight: normal;
 }
-#resto i, #resto .fa {
-  color: black;
-  font-size: 12px;
+#resto i, .fa #resto:hover {
+  animation-name: remplir;
+  animation-duration: 1.3s;
+  font-weight: bold;
+  color: #FF79DA;
+}
+@keyframes remplir {
+  from {
+    color: #9356DC;
+  }
+  to {
+    color: #FF79DA;
+  }
+}
+#resto:after {
+  color: #FF79DA;
 }
 
 .carteresto {
@@ -320,12 +383,12 @@ footer .fa-handshake-angle {
   }
 
   .newpal {
-    top: 775px;
+    top: 83%;
     right: 6%;
   }
 
   .newnote {
-    top: 1110px;
+    top: 120%;
     right: 6%;
   }
 }
@@ -359,13 +422,13 @@ footer .fa-handshake-angle {
     left: 5%;
   }
   .fonction .chiffre1 {
-    top: 39.2%;
+    top: 40.2%;
   }
   .fonction .chiffre2 {
-    top: 48.9%;
+    top: 49.9%;
   }
   .fonction .chiffre3 {
-    top: 58.7%;
+    top: 59.7%;
   }
 
   #resto img {
@@ -376,13 +439,28 @@ footer .fa-handshake-angle {
   }
 
   .newpal {
-    top: 80%;
+    top: 75%;
     right: 10%;
   }
 
   .newnote {
-    top: 117%;
+    top: 113%;
     right: 10%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #bloc_page {
+    width: 100%;
+  }
+
+  .fonction .chiffre1 {
+    top: 39.4%;
+  }
+  .fonction .chiffre2 {
+    top: 49.3%;
+  }
+  .fonction .chiffre3 {
+    top: 58.7%;
   }
 }
 

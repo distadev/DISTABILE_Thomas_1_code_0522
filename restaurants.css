@@ -205,8 +205,8 @@ h6 {
 }
 .commander:hover {
   background: linear-gradient(to right, #ff79ed, #aa65ff);
-  transform: scale(1.3);
-  transition-duration: 400ms;
+  transform: scale(1.4);
+  transition-duration: 500ms;
   box-shadow: 3px 7px 7px #c2c2c2;
 }
 
