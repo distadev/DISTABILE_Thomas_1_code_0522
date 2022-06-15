@@ -96,6 +96,7 @@ body {
 }
 
 .carte {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 5px #c2c2c2;
@@ -112,7 +113,6 @@ body {
   animation-duration: 800ms;
   animation-name: slide-right-left;
   width: 90%;
-  border-radius: 0;
 }
 @keyframes slide-right-left {
   from {
@@ -122,26 +122,14 @@ body {
     width: 90%;
   }
 }
-.carte .check {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  color: white;
-  width: 7%;
-  padding: 32px;
-  background-color: #99E2D0;
-  border-radius: 0px 10px 10px 0px;
-}
-.carte .check:active {
-  visibility: visible;
-  box-shadow: 0px 5px 5px #c2c2c2;
-}
 
 .intitule {
   width: 99%;
   display: flex;
   justify-content: space-between;
+}
+.intitule i {
+  display: flex;
 }
 
 .valid {
@@ -165,6 +153,23 @@ body {
 .ensemble .description {
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.ensemble__check {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 188px;
+  right: 18px;
+  align-items: center;
+  color: white;
+  width: 7%;
+  height: 80px;
+  background-color: #99E2D0;
+  z-index: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+.ensemble__check:hover {
+  box-shadow: 0px 5px 5px #c2c2c2;
 }
 
 .order {
