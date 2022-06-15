@@ -343,20 +343,19 @@ $fourth:#F2F2F2;
         margin-right: 15px;
         font-size: 18px
     }
-    
-    .fa-heart
-    {
+    i
+        {
         color: $primary;
         font-size: xx-large;
-        &:hover
-        {
-            transition :  0.35s ease-in-out;
-            transition-property : top, bottom, left,right, border-width;
-            color: linear-gradient(rgba(147,86,220,1) 35%, rgba(255,121,217,1) 100%);
+            &:hover
+            {
+                transition :  0.35s ease-in-out;
+                transition-property : top, bottom, left,right, border-width;
+                color: linear-gradient(rgba(147,86,220,1) 35%, rgba(255,121,217,1) 100%);
+            }
         }
-    }   
-
-}
+}  
+   
 
     footer
 {
